@@ -1,0 +1,199 @@
+*{
+    margin : 0;
+    padding: 0;
+    font-family: "Glory", sans-serif;
+    
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.glory{
+  font-family: "Glory", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 15px;
+    font-size: 18px;
+    gap: 12px;
+    margin: 3px -20px;
+    position: fixed;
+    width: 100%;
+}
+section{
+    width: 100vw;
+    position: relative;
+}
+/* class  */
+.bold{
+    margin-top: 25px;
+    border: 1px solid black;
+}
+
+nav h4{
+    border: 1.5px solid black;
+    padding: 2px 8px;
+    border-radius: 14px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+nav h4:hover{
+    background-color: white;
+    color: black;
+}
+
+
+main{
+    width: 100%;
+    margin: 45px 0px;
+    position: absolute;
+}
+
+main h1{
+    font-size: 9vmax;
+    padding: 0.1em 0.3em;
+    line-height: 0.8em;
+    cursor: pointer;
+    letter-spacing: -3px;
+}
+
+#space-between{
+    display : flex;
+    justify-content: space-between;
+    padding: 5px 25px ;
+}
+#space-between p{
+    font-size: 3vmax;
+    font-weight: 500;
+    cursor: pointer;
+}
+img{
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.discription{
+    display : flex;
+}
+
+#left p{
+    font-size: 22px;
+    padding: 5px 25px ;
+    line-height: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 2rem;
+}
+#left h2{
+    width: 60vw;
+    font-size: 4rem;
+    line-height: 0.9em;
+    letter-spacing: -3px;
+    cursor: pointer;
+    padding: 0.2em 0.5em;
+}
+#right{
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#rightUp p{
+    font-size: 22px;
+    padding: 5px 25px ;
+    line-height: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 2rem;
+
+}
+#rightDown {
+    margin: 0px 2rem;
+    padding: 5px 25px;
+}
+#rightDown i{
+    font-size: 1.5rem;
+    gap: 5px;
+    cursor: pointer;
+    /* font-weight: 600; */
+}
+
+/* Work */
+
+.work{
+    display: flex;    
+    margin-top: 1rem;
+}
+#workLeft{
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+}
+#workLeft p{
+    font-size: 22px;
+    /* padding: 5px 25px ; */
+    line-height: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 2rem;
+}
+#workLeft I{
+    font-size: 22px;
+    /* padding: 5px 25px ; */
+    line-height: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 2rem;
+}
+
+.top{
+    display: flex;
+}
+.rightLeft{
+    width: 30vw;
+    margin: 1rem 1.3rem;
+}
+.rightLeft h2{
+    font-size : 1.9rem;
+}
+
+.rightRight{
+    width: 30vw;
+    margin: 1rem 1.3rem;
+}
+.rightRight h2{
+    font-size: 1.9rem;
+}
+
+.bottom{
+    display: flex;
+    margin-top: 1rem;
+}
+
+
+
+.moving{
+    width: 100vw;
+    display: flex;
+    object-fit: cover;
+    object-fit: cover;
+    animation: move 10s linear infinite;
+}
+@keyframes move {
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(-100%);}
+}
+
+.moving h1{
+    padding: 5px 10px;
+    object-fit: cover;
+    display: inline;
+}

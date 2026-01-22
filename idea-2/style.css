@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+    margin: 5px 2px;
+    height: 40px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 100;
+}
+.menu h4{
+    
+    border: 1.5px solid black;
+    padding: 2px 8px;
+    border-radius: 14px;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+.menu h4:hover{
+    background-color: white;
+    color: black;
+}
+.menu i{
+    border: 1.5px solid black;
+    padding: 2px 8px;
+    border-radius: 14px;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+.menu i:hover{
+    background-color: white;
+    color: black;
+}
+
+.logo h1{
+    font-size: 44px;
+    font-weight: 600;
+    padding: 2px 8px;
+    color: black;
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    gap: 5px;
+    list-style: none;
+
+}
+nav ul li button{
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 18px;
+    width : 5rem;
+    border: 2px dotted black;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+#singup{
+    background-color: orangered;
+    color: white;
+    padding: 2px 5px;
+    border: 1.5px dotted red;
+    transition: 0.3s;
+}
+#singup:hover{
+    background-color: red;
+    color: black; 
+    border: 1.5px solid yellow;
+    box-shadow: 0px 0px 19px yellow;
+}
+
+
+
+main h1{
+    width: 100%;
+    font-size: 100px;
+    margin: 100px 0 40px 0;
+    text-align :  center;
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 5px;
+    /* overflow: scroll;
+    width: 90vw; */
+    margin: auto;
+    position: relative;
+}
+.imgContainer img{
+    position: absolute;
+    z-index: -1;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    /* border-radius: 50%; */
+    border: 5px solid black;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    transition: transform 2s ease-in-out 0.5s;
+}
+.imgContainer img:hover{
+    transform: scale(1.1) rotate(360deg);
+    
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    z-index: 1;
+}

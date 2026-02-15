@@ -32,6 +32,7 @@ html,body{
 }
 .nav-part2 img{
     height: 100px;
+    cursor: pointer;
 }
 
 .nav h1{
@@ -39,6 +40,7 @@ html,body{
     text-transform: capitalize;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .nav>i{
     font-size: 20px;
@@ -49,6 +51,7 @@ html,body{
     text-transform: capitalize;
     font-weight: 600;
     gap: 15px;
+    cursor: pointer;
 }
 #line {
     height: 2px;
@@ -72,18 +75,41 @@ html,body{
 #right {
     width: 36%;
     height: 100%;
-    background-color: #fff;
 }
 #center {
     width: 28%;
     height: 100%;
-    background-color: green;
+    background-color: red;
 }
 
 #left h1{
     font-size: 55px;
-    line-height: 55px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-bottom: 50px
 }
 #left h1 span{
     color: red;
+    font-weight: 500;
+}
+#left p {
+    font-size: 18px;
+    width: 70%;
+    margin-bottom: 50px;
+    line-height: 24px;
+}
+#left button{
+    font-size: 18px;
+    background-color: red;
+    border: none;
+    border-radius: 50px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer
+}
+#left button i {
+    margin-right: 10px;
+
 }

@@ -65,6 +65,8 @@ html,body{
     width: 100%;
     /* background-color: lightblue; */
     display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 #left {
     width: 36%;
@@ -77,9 +79,10 @@ html,body{
     height: 100%;
 }
 #center {
-    width: 28%;
+    width: 26%;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
+    padding-top: 30px;
 }
 
 #left h1{
@@ -111,5 +114,21 @@ html,body{
 }
 #left button i {
     margin-right: 10px;
+}
+#center-bg{
+    background-color: blue;
+    height: 85%;
+    width: 100%;
+    border-top-left-radius: 1000px;
+    border-top-right-radius: 1000px;
+    background-image: url(coca-cola-led-signage.jpg);
+    background-size: 280%;
+    background-position: 40%, 100%;
+}
 
+#content img{
+    height: 100%;
+    position: absolute;
+    left: 36%;
+    transform: translate(-50,0);
 }

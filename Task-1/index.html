@@ -3,61 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>loomé. — Organic E-Commerce</title>
     <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..600;1,400..600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="leaf-shadow"></div>
+
     <header>
-        <h1>loome.</h1>
+        <h1 class="logo">loomé<span>.</span></h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
+                <li><a href="#" class="active">Shop</a></li>
                 <li><a href="#">Collection</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-
+        <div class="nav-icons">
+            <div class="cart-icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-count">2</span>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </header>
+
     <main>
         <section id="left">
-            <h5><img src="C:\Users\Vinayak Gupta\Desktop\my code\Concept-Web-Design\Task-1\logo.png" alt="New Collection">New Collection</h5>
-            <br>
-            <div id="hero_handing">
+            <h5 class="collection-tag"><img src="logo.png"> New Collection</h5>
+            
+            <div id="hero_heading">
                 <h1>a cotton <br>weave</h1>
-                <hr>
             </div>
             
-            <p>Crefted From 100% Organic Cotton with a soft, breathable feel. Perfect for everyday elegance.</p>
-            <br>
-            <p id="bold">Colors</p>
-            <br>
-            <p id="bold">Details <span><hr id="detail-hr"></span></p>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ab laboriosam illum, reprehenderit dicta tenetur necessitatibus quisquam aliquam? Eligendi cumque animi vero, voluptas sequi beatae veritatis itaque ut dolorum adipisci.</p>
-            <br>
+            <p class="description">Crafted from 100% organic cotton with a soft, breathable feel. Perfect for all seasons and everyday elegance.</p>
+            
+            <div class="inline">
+                <p id="bold" class="section-title">colors</p>
+                <span class="color-selection">
+                    <span class="color1 active" ></span>
+                    <span class="color2" ></span>
+                    <span class="color3" ></span>
+                </span>
+            </div>
+            
+            <p id="bold" class="details">Details </p>
+            <p class="details-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, sapiente. Ipsam maiores nemo, quidem veniam et atque suscipit, saepe dolores.</p>
+            
             <div id="footer">
-                <div class="icon_container"> <img src="C:\Users\Vinayak Gupta\Desktop\my code\Concept-Web-Design\Task-1\Pure_Aryvedic-1.svg" alt=""> <br>
-                <h5>Organic<br>Cotton</h5>
+                <div class="icon_container"> 
+                    <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <h5>Organic<br>Cotton</h5>
                 </div>
-                <hr class="verticle">
+                <hr class="vertical">
                 <div class="icon_container">
+                    <div class="feature-icon"><i class="fa-solid fa-feather"></i></div>
                     <h5>Soft &<br>Lightweight</h5>
                 </div>
-                <hr class="verticle">
+                <hr class="vertical">
                 <div class="icon_container">
+                    <div class="feature-icon"><i class="fa-solid fa-border-all"></i></div>
                     <h5>Handmade<br>Weave</h5>
                 </div>
-                <hr class="verticle">
+            </div>
+        </section>
+
+        
+        
+        <section id="right">
+             <div class="vertical-title">
+                <span>cotton twill scarf</span>
+                <div class="line"></div>
             </div>
 
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=800" alt="Cotton Twill Scarf" class="main-img">
+                
+              
+                
+                <div class="badge price-badge">$488</div>
+                <div class="badge rating-badge">Rating &nbsp; ★★★★★</div>
+                
+                <button class="add-to-cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>Add to bag</span>
+                </button>
+            </div>
+
+            <!-- Soft Blurry Trust Bar Underneath Main Image -->
+            <div class="trust-bar">
+                <div class="trust-item">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <div>
+                        <h4>Secure Payment</h4>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-truck"></i>
+                    <div>
+                        <h4>Free Shipping</h4>
+                        <p>Over $100</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                    <div>
+                        <h4>Easy Returns</h4>
+                        <p>30 Days</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="right">
-            <h1> cotton twill scarf</h1>
-            <img src="images/2.jpg" alt="">
+        <section id="gallery-sidebar">
+            <div class="thumb active">
+                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=150" alt="Scarf Crop Wear">
+            </div>
+            <div class="thumb">
+                <img src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&q=80&w=150" alt="Fabric Detail">
+            </div>
+            <div class="thumb">
+                <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=150" alt="Folded Scarf">
+            </div>
+            <div class="thumb">
+                <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=150" alt="Cotton Plant Minimal">
+            </div>
         </section>
     </main>
+
 </body>
 </html>

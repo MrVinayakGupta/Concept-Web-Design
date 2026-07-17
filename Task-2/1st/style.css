@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+}
+
+#left{
+    width: 50%;
+    height: 100vh;
+}
+
+.rotate{
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    /* left: -20%; */
+}
+
+.left-details{
+    margin-left: 20%;
+    padding: 10%;
+    top: 30%;
+    left: 20%;
+    line-height: 2rem;
+}
+
+#left nav{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 4rem;
+}
+
+#left nav input{
+    width: 40%;
+    height: 5vh;
+    border-radius: 50px;
+    border: none;
+    padding-left: 10px;
+    background-color: rgb(240, 240, 240);
+}
+#left main h1{
+    text-size: 5rem;
+    color: green;
+    letter-spacing: 0.5rem;
+    position: relative;
+    left: -240px;
+    top: 100px;
+}
+main div ul li{
+    font-weight: 700;
+}
+
+main div ul hr{
+    width: 14vw;
+}
+
+
+
+
+#right{
+    width: 50%;
+    height: 100vh;
+    background-color: brown;
+}
+
+#right nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 4rem;
+}
+
+#right nav ul{
+    display: flex; 
+    gap: 2rem;
+    text-decoration: none;
+    list-style: none;
+    padding: 20px;
+}
+#right nav ul li{
+    color: white;
+}
+
+#right main h1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    margin-top: 4rem;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+#right main ul{
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}

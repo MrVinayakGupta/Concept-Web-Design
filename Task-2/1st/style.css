@@ -1,27 +1,29 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 body{
     display: flex;
 }
 
+
 #left{
-    width: 50%;
+    width: 50vw;
     height: 100vh;
 }
 
 .rotate{
     transform: rotate(-90deg);
     position: absolute;
-    top: 50%;
-    /* left: -20%; */
+    top: 45%;
+    left: -9%;
 }
 
 .left-details{
-    margin-left: 20%;
-    padding: 10%;
+    margin: 2.5rem 0 0 12rem;
+    /* padding: 10%; */
     top: 30%;
     left: 20%;
     line-height: 2rem;
@@ -32,6 +34,7 @@ body{
     align-items: center;
     padding: 20px;
     gap: 4rem;
+    cursor: pointer;
 }
 
 #left nav input{
@@ -42,19 +45,27 @@ body{
     padding-left: 10px;
     background-color: rgb(240, 240, 240);
 }
-#left main h1{
-    text-size: 5rem;
-    color: green;
-    letter-spacing: 0.5rem;
-    position: relative;
-    left: -240px;
-    top: 100px;
+
+#lef main{
+    display: flex;
 }
-main div ul li{
+
+#left main h1{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 4.5rem;
+    font-weight: 400;
+    /* writing-mode: vertical-lr; */
+    transform: rotate(-90deg);
+    color: #162c22;
+    line-height: 1;
+}
+
+#left main div ul li{
     font-weight: 700;
 }
 
-main div ul hr{
+#left main div ul hr{
     width: 14vw;
 }
 
@@ -62,9 +73,9 @@ main div ul hr{
 
 
 #right{
-    width: 50%;
+    width: 50vw;
     height: 100vh;
-    background-color: brown;
+    background-color: #b92b1a;
 }
 
 #right nav {
@@ -84,6 +95,7 @@ main div ul hr{
 }
 #right nav ul li{
     color: white;
+    cursor: pointer;
 }
 
 #right main h1{
@@ -91,16 +103,106 @@ main div ul hr{
     align-items: center;
     justify-content: space-evenly;
     color: white;
-    margin-top: 4rem;
+    margin-top: 2rem;
     font-weight: 300;
     font-size: 3rem;
 }
 
-#right main ul{
+#right-main {
+    width : 50vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.verticle{
+    color:aliceblue; 
+    transform: rotate(-90deg); 
+    width: 35%;
+    margin: 5.5rem 0 0.5rem 17rem;
+}
+
+#right-left{
+    width: 50%;
+}
+
+#right-right{
+    width: 50%
+}
+
+#right-right ul{
     list-style: none;
     color: white;
     display: flex;
     flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-left: 2vw;
+    margin-top: 2rem;
+}
+
+.switch-container {
+    display: flex;
     align-items: center;
-    justify-content: end;
+    cursor: pointer;
+    gap: 1rem;
+    line-height: 30px;
+    color: white;
+    margin-left: 35%;
+}
+
+.switch-container input {
+    display: none;
+}
+
+.slider {
+    width: 38px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+input:checked + .slider {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+input:checked + .slider:before {
+    transform: translateX(18px);
+}
+
+.toggle-text {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.add-to-cart-btn {
+    background-color: #d2b48c; /* Soft warm gold/beige */
+    color: #1a2e26;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    left: 33%;
+    top: 5px;
+    transition: background-color 0.2s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #c4a478;
 }

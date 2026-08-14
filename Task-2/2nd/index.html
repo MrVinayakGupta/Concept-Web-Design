@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insect UI Replication</title>
+    <!-- Google Fonts for Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Container splitting the layout 50/50 -->
+    <div class="container">
+        
+        <!-- Center Floating Image -->
+        <div class="center-image-container">
+            <img src="http://googleusercontent.com/image_collection/image_retrieval/16933053595909563363_0" alt="Pachyteria equestris" class="main-insect">
+        </div>
+
+        <!-- LEFT PANEL (White Background) -->
+        <div class="panel left-panel">
+            <header class="header">
+                <div class="logo">INSECT</div>
+                <div class="search-bar">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </header>
+
+            <main class="content-left">
+                <h1 class="vertical-title">Classification</h1>
+                
+                <div class="classification-list">
+                    <div class="class-item">
+                        <span class="dot"></span>
+                        <div>
+                            <h3>Class:</h3>
+                            <p>Insecta</p>
+                        </div>
+                    </div>
+                    <div class="class-item">
+                        <span class="dot"></span>
+                        <div>
+                            <h3>Order:</h3>
+                            <p>Coleoptera</p>
+                        </div>
+                    </div>
+                    <div class="class-item">
+                        <span class="dot"></span>
+                        <div>
+                            <h3>Family:</h3>
+                            <p>Cerambycidae</p>
+                        </div>
+                    </div>
+                    <div class="class-item">
+                        <span class="dot"></span>
+                        <div>
+                            <h3>Sub-Family:</h3>
+                            <p>Cerambycinae</p>
+                        </div>
+                    </div>
+                    <div class="class-item">
+                        <span class="dot"></span>
+                        <div>
+                            <h3>Tribe:</h3>
+                            <p>Callicromatini</p>
+                        </div>
+                    </div>
+                    <div class="class-item">
+                        <span class="dot"></span>
+                        <div>
+                            <h3>Genus:</h3>
+                            <p>Pachyteria</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- RIGHT PANEL (Red Background) -->
+        <div class="panel right-panel">
+            <nav class="navbar">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#" class="nav-link">Shop</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Gallery</a>
+                <a href="#" class="nav-link">Contact</a>
+            </nav>
+
+            <main class="content-right">
+                <h2 class="scientific-name">Pachyteria <br><span>equestris</span></h2>
+                
+                <div class="specimen-meta">
+                    <!-- Insect outline icon placeholder -->
+                    <div class="meta-icon-block">
+                        <div class="bug-outline">🪲</div>
+                        <span class="meta-label">32 mm</span>
+                    </div>
+                    <div class="meta-divider"></div>
+                    <div class="meta-details">
+                        <div class="meta-row">
+                            <span class="icon">📍</span>
+                            <div>
+                                <h4>Locality:</h4>
+                                <p>Malaysia</p>
+                            </div>
+                        </div>
+                        <div class="meta-row">
+                            <span class="icon">♂</span>
+                            <div>
+                                <h4>Sex:</h4>
+                                <p>Male</p>
+                            </div>
+                        </div>
+                        <div class="meta-row">
+                            <span class="icon">📐</span>
+                            <div>
+                                <h4>Size:</h4>
+                                <p>32 mm / 12 mm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price">$5.99</div>
+
+                <!-- Toggles -->
+                <div class="toggle-group">
+                    <label class="switch-container">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                        <span class="toggle-text">View detailed antennae</span>
+                    </label>
+                    <label class="switch-container">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                        <span class="toggle-text">View underside</span>
+                    </label>
+                </div>
+
+                <button class="add-to-cart-btn">Add to collection</button>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>

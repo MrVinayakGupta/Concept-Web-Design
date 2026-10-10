@@ -14,6 +14,9 @@ section{
     height: 33%;
     width: 100%;
 }
+h1{
+    text-transform: uppercase;
+}
 
 .header{
     display: flex;
@@ -25,6 +28,9 @@ section{
     font-size: 1.4rem;
     margin-top: 68px;
 }
+.top-content div{
+    margin-left: 3rem;
+}
 
 p{
     width: 40%;
@@ -32,7 +38,7 @@ p{
 }
 
 .bottom-content{
-    padding: 113px;
+    padding-left: 113px;
     font-size: 1.4rem;
-    margin-top: 68px;
+    margin-left: 68px;
 }

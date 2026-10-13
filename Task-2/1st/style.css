@@ -10,7 +10,7 @@ body{
     overflow : hidden;
 }
 
-section{
+section{ 
     height: 33%;
     width: 100%;
 }
@@ -23,13 +23,18 @@ h1{
     align-items: center;
     padding: 20px;
 }
+
+.logo{
+    height: 50px;
+    width: 50px;
+}
 .top-content{
-    padding: 113px;
+    /* padding: 113px; */
     font-size: 1.4rem;
-    margin-top: 68px;
+    margin: 6rem 0 0 10rem ;
 }
 .top-content div{
-    margin-left: 3rem;
+    margin-left: 11rem;
 }
 
 p{
@@ -37,8 +42,26 @@ p{
     font-size: 5px;
 }
 
+.middle{
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+}
+
+ul{
+    list-style: none;
+    gap: 2rem;
+}
+
+
+.bottom{
+
+}
 .bottom-content{
     padding-left: 113px;
     font-size: 1.4rem;
-    margin-left: 68px;
+    margin-left: 68px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
